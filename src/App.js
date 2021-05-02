@@ -2,7 +2,7 @@
 import './App.css';
 import Header from './Component/Header/Header';
 import Home from './Component/Header/Home/Home';
-import Particles from 'react-particles-js'
+
 import {
   BrowserRouter as Router,
   Switch,
