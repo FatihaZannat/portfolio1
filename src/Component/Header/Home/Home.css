@@ -1,0 +1,31 @@
+div{
+    color: white;
+    /* position: relative; */
+    
+    
+
+}
+.home{
+    display: flex;
+    justify-content: center;
+    
+}
+img{
+    width: 220px;
+    border-radius: 50%;
+}
+.typed-text{
+    font-size: 2rem;
+    color: rgb(233, 234, 235);
+}
+button{
+    background-color: #0ab7b7;
+    color: white;
+    border: none;
+    padding:5px 12px;
+    border-radius: 5%;
+}
+button:hover{
+    /* color: rgb(10, 10, 9); */
+    background-color: #098181;
+}
