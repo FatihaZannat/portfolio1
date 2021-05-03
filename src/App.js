@@ -9,7 +9,7 @@ import {
   Route
 } from "react-router-dom";
 import Contact from './Component/Contact/Contact';
-import Services from './Component/Services/Services';
+
 import Projects from './Component/Project\'s/Projects';
 
 function App() {

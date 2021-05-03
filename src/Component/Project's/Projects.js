@@ -1,9 +1,9 @@
 import React from 'react';
-import SingleProject from './SingleProject';
+
 import img from '../../image/creative-agency.PNG'
 import img1 from '../../image/drive.PNG'
 import img2 from '../../image/league.PNG'
-import img3 from '../../image/pin.PNG'
+
 
 const Projects = () => {
     return (
