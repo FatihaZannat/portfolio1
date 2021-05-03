@@ -6,11 +6,11 @@ import Home from './Component/Header/Home/Home';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  
+  Route
 } from "react-router-dom";
-import Contact from './Component/Contact';
+import Contact from './Component/Contact/Contact';
 import Services from './Component/Services/Services';
+import Projects from './Component/Project\'s/Projects';
 
 function App() {
   return (
@@ -25,11 +25,12 @@ function App() {
         <Route path="/contact"> 
           <Contact/>
         </Route>
+        
+        <Route path="/project">
+          <Projects/>
+        </Route>
         <Route path="/">
           <Home/>
-        </Route>
-        <Route path="/services">
-          <Services/>
         </Route>
       </Switch>
       </Router>

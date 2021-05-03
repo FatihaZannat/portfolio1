@@ -3,8 +3,9 @@ import './Home.css'
 import Typed from 'react-typed';
 
 import img from '../../../image/IMG_20200128_201841-removebg-preview.png'
-import Particles from '../../Particles/Particles';
+
 import Services from '../../Services/Services';
+import Projects from '../../Project\'s/Projects';
 
 const Home = () => {
     return (
@@ -23,7 +24,8 @@ const Home = () => {
           />
             
             <p>I am an enthusiastic JavaScript developer <br/> with Knowing some Framework for the <br/> frontend and the backend.</p>
-            <button >Resume</button>
+            <a href="https://drive.google.com/file/d/1AFYC3xgHoOfdfjitJHQZSV5oSRC-ymeE/view" download="proposed_file_name">Download Resume</a>
+            
           </div>
           
           <div>
@@ -32,6 +34,7 @@ const Home = () => {
           </div>
           
             <Services></Services>
+            <Projects></Projects>
         </div>
         
     );
