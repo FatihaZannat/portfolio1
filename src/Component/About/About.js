@@ -5,7 +5,7 @@ const About = () => {
         <div style={{height:'300px'}}>
             <h2 className="text-center">My Skill</h2>
 
-<div style={{width:'75%', marginLeft:'70px'}}>
+<div style={{width:'75%'}} className='m-auto'>
 <div className="progress" >
 <div className="progress-bar bg-success" role="progressbar" style={{width: '80%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML</div>
 </div> <br/>
