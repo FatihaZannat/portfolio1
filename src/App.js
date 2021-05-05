@@ -9,8 +9,9 @@ import {
   Route
 } from "react-router-dom";
 import Contact from './Component/Contact/Contact';
-
 import Projects from './Component/Project\'s/Projects';
+import About from './Component/About/About';
+import Blogs from './Component/Blogs/Blogs';
 
 function App() {
   return (
@@ -22,12 +23,18 @@ function App() {
         <Route path="/home">
           <Home/>
         </Route>
+        <Route path="/about">
+          <About/>
+        </Route>
         <Route path="/contact"> 
           <Contact/>
         </Route>
         
         <Route path="/project">
           <Projects/>
+        </Route>
+        <Route path="/blog">
+          <Blogs/>
         </Route>
         <Route path="/">
           <Home/>

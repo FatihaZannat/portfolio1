@@ -10,8 +10,10 @@ Link
 const Header = () => {
     return (
 
-<Navbar bg="dark" variant="dark">
+<Navbar  variant="dark" expand="md">
     <Navbar.Brand to="/home"></Navbar.Brand>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="ml-auto">
       <Nav.Link as={Link} to="/home">Home</Nav.Link>
       <Nav.Link as={Link} to="/about">About Me</Nav.Link>
@@ -20,7 +22,7 @@ const Header = () => {
       <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
    
     </Nav>
-  
+    </Navbar.Collapse>
   </Navbar>
 
 

@@ -3,11 +3,15 @@ import React from 'react';
 import pic from '../../image/creative-agency.PNG'
 import pic1 from '../../image/drive.PNG'
 import pic2 from '../../image/league.PNG'
+import SingleProject from './singleProject';
+
 
 
 const Projects = () => {
     return (
-        <div className="mt-4">
+        <div className="mt-4" style={{height:'300px'}}>
+          
+          
              <div class="card-group">
   <div class="card m-3">
     <img class="card-pic-top" src={pic} alt="Card image cap"/>
