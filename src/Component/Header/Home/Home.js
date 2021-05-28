@@ -2,7 +2,7 @@ import React from 'react';
 import './Home.css' 
 import Typed from 'react-typed';
 
-import img from '../../../image/IMG_20200128_201841-removebg-preview.png'
+import img from '../../../image/portfolioIMG.png'
 
 
 import Projects from '../../Project\'s/Projects';
@@ -12,11 +12,11 @@ import Contact from '../../Contact/Contact';
 const Home = () => {
     return (
         
-        <div >
+        <div>
          
-          <div className="home d-flex justify-content-center">
+          <div className="home">
           <div className="row mb-3" >
-          <div className='col-md'>
+          <div className='col-md text-center'>
           <h2>Hi, I am</h2>
             <h2 style={{color: '#0ab7b7'}}><b>Fatiha Zannat</b></h2>
             <Typed className='typed-text'

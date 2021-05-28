@@ -1,22 +1,43 @@
 import React from 'react';
 import  './Contact.css'
-
+import emailjs from 'emailjs-com';
 const Contact = () => {
    
+    function sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_jyirioj', 'template_c59hsx6', e.target, 'user_4hDPIEwJdnZIduDg4xo3P')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset()
+      }
+      
     return (
-        <div>
-            <form className="contact-form" >
-                
-            <input type="hidden" name="contact_number" /> <br/>
-            <label>Name</label> 
-            <input type="text" name="user_name" /><br/>
-            <label>Email</label> 
-            <input type="email" name="user_email" /><br/>
-            <label style={{marginRight:'25px'}}>Message</label>
-            <textarea name="message" /> <br/>
-            <input className='btn btn-dark' type="submit" value="Send" /> 
-    </form>
+        
+            <div >
+            <h1 className="mb-4">Contact with me</h1>
+            <form className="contact-form" onSubmit={sendEmail} >
+              <div>
+              <h3>Your Name</h3> 
+            <input type="text" className="form-control " name="name" />
+                  </div> 
+                  <div>
+              <h3>Your Email</h3> 
+            <input type="text" className="form-control " name="email" />
+                  </div> 
+                  <div>
+              <h3>Your Message</h3> 
+                  <textarea rows="4"  className="form-control text-area" name="message" /> 
+                  </div> 
+            <br/>
+           
+            <input className='btn' type="submit" value="Send Message" /> 
+            </form>
         </div>
+       
     );
 };
 

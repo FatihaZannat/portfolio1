@@ -1,12 +1,11 @@
 .contact-form{
-    text-align: center;
+    margin: auto;
+    width: 60%;
 }
+h1{
+    color: #15c7c7;
+}
+.btn{
+background-color: #15c7c7;
 
-input{
-    border: cornsilk 1px solid;
-    margin-left: 30px;
-    
-}
-label{
-    padding: 20px;
 }
